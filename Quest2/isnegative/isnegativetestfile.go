@@ -8,4 +8,4 @@ func main() {
 	piscine.IsNegative(-1)
 }
 
-// go test filename (isnegativetestfile.go)
+// go test filename (isnegativetestfile.go).
