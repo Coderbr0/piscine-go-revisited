@@ -22,4 +22,13 @@ func main() {
 	z01.PrintRune('\n')
 }
 
+func main() {
+	alphabet := "zyxwvutsrqponmlkjihgfedcba"
+
+	for i := range alphabet {
+		z01.PrintRune(rune(alphabet[i])) // Casting is not allowed for this exercise!
+	}
+	z01.PrintRune('\n')
+}
+
 */
