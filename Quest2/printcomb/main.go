@@ -3,7 +3,7 @@ package main // package piscine
 import "github.com/01-edu/z01"
 
 func main() { // func PrintComb() {}
-	for a := 48; a < 56; a++ {			// a starts at 48 as rune character value for this integer is 0; refer to ascii table (man ascii in terminalc)
+	for a := 48; a < 56; a++ {			// a starts at 48 as rune character value for this integer is 0; refer to ascii table (man ascii in terminal)
 		for b := a + 1; b < 57; b++ {
 			for c := b + 1; c < 58; c++ {
 				if a == 55 && b == 56 && c == 57 {
