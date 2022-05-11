@@ -28,7 +28,7 @@ func main() {	// func PrintComb2() {
 						z01.PrintRune(rune(digits[d]))
 
 						if a == 9 && b == 8 && c == 9 && d == 9 {
-							z01.PrintRune(rune(10))
+							z01.PrintRune('\n')
 							break
 						} else {
 							z01.PrintRune(',')
