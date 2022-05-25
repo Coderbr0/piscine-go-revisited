@@ -14,4 +14,4 @@ func main() {
 	PrintStr("Hello World!")
 }
 
-// hint: first line, convert string to byte => 	byteOfStrings := []byte(s)
+// hint: first line, convert string to slice of bytes =>  byteOfStrings := []byte(s)
