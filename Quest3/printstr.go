@@ -3,7 +3,7 @@ package main
 import "github.com/01-edu/z01"
 
 func PrintStr(s string) {
-	sByte := []byte("Hello World!")
+	sByte := []byte(s)
 	for _, v := range sByte {
 		z01.PrintRune(rune(v))
 	}
