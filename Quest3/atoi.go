@@ -24,7 +24,7 @@ func main() {
 /* Alternative:
 
 func Atoi(s string) int {
-result := 0
+	result := 0
 	minusOrPlusResult := 1
 
 	for i, num := range s {
