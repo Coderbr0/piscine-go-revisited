@@ -58,6 +58,32 @@ if nb < 0 {
 return 0
 }
 
+if nb <= 1 { // for 0 and 1
+return 1
+}
+
+for i := nb; i > 0; i-- {
+result = result * i
+//fmt.Println(result)
+}
+return result
+}
+
+func main() {
+arg := 4
+fmt.Println(iterFactorial(arg))
+}
+----------------------------------------------------
+package main
+
+import "fmt"
+
+func iterFactorial(nb int) int {
+result := 1
+if nb < 0 {
+return 0
+}
+
 if nb == 0 {
 return 1
 }
