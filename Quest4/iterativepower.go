@@ -1,13 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
-func IterativePower(nb int, power int) int {
-	result := nb * nb * nb
-	
-	return result
+func iterativePower(nb, power int) int {
+	if power < 0 {
+		return 0
+	}
+	var x float64 = float64(nb)
+	var y float64 = float64(power)
+	result := math.Pow(x, y)
+	return int(result)
 }
 
 func main() {
-	fmt.Println(IterativePower(4, 3))
+	fmt.Println(iterativePower(4, 3))
 }
