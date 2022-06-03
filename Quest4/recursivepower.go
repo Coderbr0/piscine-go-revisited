@@ -17,7 +17,9 @@ func main() {
 }
 
 /*
+if power > 0 {
 s := nb * recPower(nb, power-1)
 fmt.Println(s)
-return s
+return s 	// So that stored value is printed out in func main()
+}
 */
