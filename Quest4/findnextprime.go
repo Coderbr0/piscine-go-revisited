@@ -31,6 +31,6 @@ func FindNextPrime(Nb int) int {
 }
 
 func main() {
-	fmt.Println(FindNextPrime(10))
 	fmt.Println(FindNextPrime(5))
+	fmt.Println(FindNextPrime(4))
 }
