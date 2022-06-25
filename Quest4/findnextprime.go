@@ -22,9 +22,13 @@ func FindNextPrime(Nb int) int {
 	var found bool = false
 	// Loop continuously until IsPrimeNum returns true for a number greater than nb
 	for !found {
-		prime++
-		if IsPrimeNum(prime) {
+		if IsPrimeNum(prime) { // if IsPrimeNum(prime) == true
 			found = true
+		} else {
+			prime++
+			if IsPrimeNum(prime) {
+				found = true
+			}
 		}
 	}
 	return prime
