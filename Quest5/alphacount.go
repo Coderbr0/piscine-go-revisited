@@ -26,7 +26,7 @@ func main() {
 	sRune := []rune(s)
 	count := 0
 	for i := 0; i < len(sRune); i++ {
-		if sRune[i] >= 65 && sRune[i] <= 90 || sRune[i] >= 97 && sRune[i] <= 122 {
+		if (sRune[i] >= 65 && sRune[i] <= 90) || (sRune[i] >= 97 && sRune[i] <= 122) {
 			count++
 		}
 	}
