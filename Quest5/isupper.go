@@ -7,8 +7,7 @@ import (
 
 func IsUpper(s string) bool {
 	for _, v := range s {
-		fmt.Println(v)
-		if !unicode.IsUpper(v) && unicode.IsLetter(v) {
+		if !unicode.IsUpper(v) || !unicode.IsLetter(v) {
 			return false
 		}
 	}
@@ -18,5 +17,10 @@ func IsUpper(s string) bool {
 func main() {
 	fmt.Println(IsUpper("HELLO"))
 	fmt.Println(IsUpper("HELLO!"))
-	fmt.Println(IsUpper("HELlO!"))
 }
+
+/*
+
+if !(unicode.IsUpper(v) || unicode.IsLetter(v)) {} would not work in the case of fmt.Println(IsUpper("hello"))
+
+*/
