@@ -30,14 +30,14 @@ Letters (L), Marks (M), Numbers (N), Punctuation (P), Symbols (S), and Spaces (Z
 /* Alternative:
 
 func IsAlpha(s string) bool {
-for i, v := range s {
-if (v >= 'A' && v <= 'Z') || (v >= 'a' && v <= 'z') || (v >= '0' && v <= '9') {
-i++
-} else {
-return false
-}
-}
-return true
+	for i, v := range s {
+		if (v >= 'A' && v <= 'Z') || (v >= 'a' && v <= 'z') || (v >= '0' && v <= '9') {
+			i++
+		} else {
+			return false
+		}
+	}
+	return true
 }
 
 */
